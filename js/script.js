@@ -4,7 +4,8 @@ window.addEventListener('DOMContentLoaded', () => {
         await fetch(url)
             .then(response => response.json())
             .then(json => createElements(json.goods));
-            collback();
+            
+        callback();
     }
     
     function createElements(arr) {
